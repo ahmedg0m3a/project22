@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family:sans-serif;
+    background-color: rgb(244, 244, 244);
+    perspective: 600px;
+}
+.head{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    height: 150px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.hli{
+    width: 60%;
+}
+.ulli{
+    display: none;
+    width: 500px;
+    height: 150px;
+    top: 104px;
+    border: 1px solid   rgb(37, 54, 8);
+    position: absolute;
+    left: -20px;
+    z-index: 5;
+    padding-top: 5px;
+    background-color: whitesmoke;
+}
+.head-ul .table1 {
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+    padding-top: 70px;
+    position: relative;
+}
+.hi::after{
+    content: "0";
+    position: absolute;
+    top: 78px;
+    left: 1255px;
+    width: 12px;
+    height: 19px;
+    border-radius: 14px;
+    background-color:rgb(58, 84, 13) ;
+    color: aliceblue;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+.head-ul li a{
+    color: rgb(37, 54, 8);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.table1::after{
+    content: "";
+    position: absolute;
+    top: 63px;
+    left: -20px;
+    width: 105px;
+    height: 37px;
+    border-right: 1px solid  rgb(37, 54, 8);
+    border-left: 1px solid  rgb(37, 54, 8);
+    transform: scale(0);
+    transform-origin: center;
+    transition: .5;
+}
+.table1:hover::after{
+    transform: scale(1);
+}
+.table1::before{
+    content: "";
+    position: absolute;
+    top: 63px;
+    left: -20px;
+    width: 106px;
+    height: 36px;
+    border-bottom: 1px solid  rgb(37, 54, 8);
+    border-top: 1px solid  rgb(37, 54, 8);
+    
+    transform: scale(0);
+    transform-origin: left;
+    transition: .5s;
+}
+.table1:hover::before{
+    transform: scale(1);
+}
+.table:hover .ulli{
+    display: block;
+}
+.table{
+    position: relative;
+}
+.ulli ul{
+    display: inline-block;
+    list-style: none;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+.fif{
+    margin-left: 20px;
+}
+.ulli li a{
+    font-weight: 100;
+    font-size: 17px;
+}
+.ulli li{
+    padding-top: 5px;
+}
+.lidot{
+    margin-top: -20px;
+    letter-spacing: -2px;
+    font-size: -20px;
+}
+.hi i{
+    font-size: 27px;
+    line-height: 150px;
+    font-weight: bold;
+    color:  rgb(37, 54, 8);
+}
+.hedsp{
+    font-size: 17px;
+}
+.colc{
+    width: 80%;
+    height: 500px;
+    background-image: url(../Images/realistic-t-shirt-mockup-your-design_1165404-60629.avif);
+    background-size: cover;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 150px;
+}
+.colc p{
+    color: rgb(217, 217, 217);
+    padding-left: 100px;
+    font-size: 60px;
+}
+.colc button{
+    width: 80px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 110px;
+    background-color:rgb(202, 202, 202) ;
+    border: none;
+    color:   rgb(37, 54, 8);
+    font-size: 16px;
+}
+.colc button:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.spcil-contenr h2{
+    text-align: center;
+    margin-top: 50px;
+    color:   rgb(37, 54, 8);
+    font-size: 35px;
+}
+.lien{
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 2px;
+    background-color: rgb(37, 54, 8) ;
+    transition: .5s;
+}
+.spcil-titel:hover .lien{
+    width: 150px;
+}
+.spcil-paernt{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 400px 300px;
+    grid-gap: 20px 10px;
+}
+.gred1{
+    grid-column: 1/3;
+    padding: 20px 20px;
+    background-color:  rgb(229, 232, 223);
+    overflow: auto;
+}
+.spcil-info p{
+    margin-top: 25px;
+    color:rgb(103, 119, 74) ;
+    font-size: 19px;
+}
+.spcil-info h3{
+    font-size: 20px;
+    margin-top: 3px;
+    color: rgb(37, 54, 8) ;
+}
+.spcil-info i{
+    display: block;
+    margin-left: 263px;
+    margin-top: -28px;
+    background-color: rgb(76, 114, 6);
+    color: aliceblue;
+    height: 29px;
+    width: 29px;
+    line-height: 29px;
+    padding-left: 8px;
+    font-size: 22px;
+    visibility: hidden;
+}
+.gred:hover i{
+    visibility: visible;
+}
+.gred1 i{
+    font-size: 50px;
+    color: rgb(68, 84, 39)
+}
+.gred1 h3{
+    margin-left: 54px;
+    margin-top: -45px;
+    font-size: 27px;
+    color: rgb(37, 54, 8) ;
+}
+.p1{
+    margin-left: 54px;
+    margin-top: -1px;
+    font-size: 18px;
+}
+.p2{
+    margin-top: 30px;
+    line-height: 27px;
+    font-size: 17px;
+}
+.gred-lien{
+    height: 2px;
+    width: 50px;
+    background-color: rgb(37, 54, 8) ;
+    float: right;
+    margin-top: 20px;
+}
+.gred-lien1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.gred2{
+    background-image: url(../Images/bdla8671-1048089935.jpg);
+    background-size: cover;
+    padding-top: 30px;
+    padding-left: 20px;
+    color: rgb(233, 233, 233);
+    font-size: 20px;
+    transition: .5s;
+}
+.gred2:hover{
+    transform: scale(1.05,1.09);
+}
+.gred3{
+    background-image: url(../Images/clasc1.jpg);
+    background-size: cover;
+    padding-top: 30px;
+    padding-left: 20px;
+    color: rgb(233, 233, 233);
+    font-size: 20px;
+    transition: .5s;
+}
+.gred2 h3{
+    color: rgb(255, 255, 255)
+}
+.gred3 h3{
+    color: rgb(255, 255, 255)
+}
+.gred3:hover{
+    transform: scale(1.05,1.05);
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.icon-contener{
+    padding-top: 40px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+.icon-cont{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid rgb(61, 67, 50);
+}
+.icon-cont:last-child{
+    border: 0;
+}
+.icon-item{
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.icon-item i{
+    font-size: 40px; ;
+    position: absolute;
+    transition: .5s;
+}
+.icon1{
+    margin-left: -20px;
+    color:rgb(109, 117, 92)
+}
+.icon2{
+    top: 100px;
+    left: 0;
+    color: rgb(55, 83, 4);
+    margin-left: 90px;
+}
+.icon-cont:hover .icon{
+    transform: translateY(-100px);
+}
+.icon-cont h3{
+    color:   rgb(37, 54, 8);
+}
+.icon-cont p{
+    color: rgb(112, 117, 103) ;
+}
+.icon-hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.card-contener h2{
+    text-align: center;
+    margin-top: 50px;
+    color:   rgb(37, 54, 8);
+    font-size: 35px;
+}
+.card-titel:hover .lien{
+    width: 150px;
+}
+.card-titel{
+    text-align: center;
+}
+.card-titel p{
+display: inline-block;
+padding: 30px 30px;
+font-size: 18px;
+color:rgb(112, 117, 103) ;
+}
+.card-paernt{
+    width: 80%;
+    height: 1090px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 500px 500px;
+    grid-gap: 20px 20px;
+}
+.card{
+    transform-style: preserve-3d;
+    position: relative;
+    transition: .1.5s;
+}
+.card-front ,.card-back{
+    width: 392px;
+    height: 400px;
+    position: absolute;
+}
+.card-front{
+    z-index: 1;
+    background-image: url(../Images/cf18e26b09-e1ca-47fb-b_1701_102350.jpeg);
+    background-size: cover;
+    backface-visibility: hidden;
+}
+.card-back{
+    background-image:url(../Images/cb168014.jpeg) ;
+    transform: rotateY(180deg);
+    background-size: cover;
+    padding-left: 120px;
+ }
+ .card:hover{
+    transform: rotateY(180deg);
+ }
+ .card-back i{
+    display: block;
+    display: inline-block;
+    margin-top: 190px;
+    padding-top: 12px;
+    padding-left: 13px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(32, 48, 2) ;
+    color: aliceblue;
+ }
+ .card-info{
+    margin-top: 420px;
+ }
+ .card-info i{
+    margin-left: 3px;
+ }
+ .card-i{
+    color: gold;
+ }
+.card-info p{
+    font-size: 19px;
+    line-height: 40px;
+    color:rgb(28, 42, 1) ;
+ }
+ .card-info h3{
+    font-size: 20px;
+    color:rgb(28, 42, 1) ;
+ }
+ .front1{
+    background-image: url(../Images/sf18455295_2735891953389509_2484375405777808893_o.jpg);
+ }
+ .back1{
+    background-image: url(../Images/sb1lwBqJhBdlFtUFWZXZ5nOyomiokw3161Fn3HE0.jpeg);
+ }
+ .front2{
+    background-image: url(../Images/sf22164_1323_012_f.jpg);
+ }
+ .back2{
+    background-image: url(../Images/sb226797-deef-4c36-9854-9c3570c0d220.webp);
+ }
+ .front3{
+    background-image: url(../Images/جاكيت-بيسبول-أحمر-غامق.jpg);
+ }
+ .back3{
+    background-image: url(../Images/جاكيت-بيسبول-شتوي.jpg);
+ }
+ .front4{
+    background-image: url(../Images/tf1-1.jpg);
+ }
+ .back4{
+    background-image: url(../Images/tb1477e6-1103-4659-b07b-26a92921b951-743.webp);
+ }
+ .front5{
+    background-image: url(../Images/f56a55337-769e-45e1-8274-349bca552d87.avif);
+ }
+ .back5{
+    background-image: url(../Images/ترنج-V-11-اوڤر-سايز-كافيه.jpg);
+ }
